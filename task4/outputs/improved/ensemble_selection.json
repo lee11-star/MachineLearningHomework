@@ -1,0 +1,118 @@
+{
+  "mean_dice": 0.851208947679073,
+  "pooled_dice": 0.8517012885163113,
+  "threshold": 0.39999999999999997,
+  "per_image_dice": {
+    "8": 0.8352112449025014,
+    "10": 0.8571862286722673,
+    "15": 0.8688149271672885,
+    "16": 0.8436233899742341
+  },
+  "native_mean_dice": 0.8159582144518502,
+  "native_per_image_dice": {
+    "8": 0.7980793048916788,
+    "10": 0.8183999019422186,
+    "15": 0.8292473827387202,
+    "16": 0.8181062682347836
+  },
+  "evaluation_mask_conversion": "native binary -> PIL bilinear 512x512 -> nonzero, for prediction and reference",
+  "strategy": "context_d4",
+  "members": [
+    {
+      "checkpoint": "outputs\\improved\\final_context\\model.pt",
+      "validation_checkpoint": "outputs\\improved\\validation_context\\best.pt",
+      "tta": "d4"
+    }
+  ],
+  "validation_ids": [
+    "8",
+    "10",
+    "15",
+    "16"
+  ],
+  "baseline_mean_dice": 0.8485906687029776,
+  "improvement": 0.002618278976095345,
+  "comparisons": [
+    {
+      "mean_dice": 0.8485906687029776,
+      "pooled_dice": 0.848996367662394,
+      "threshold": 0.4749999999999999,
+      "per_image_dice": {
+        "8": 0.835136957708752,
+        "10": 0.8549292987718916,
+        "15": 0.8634711689800207,
+        "16": 0.8408252493512459
+      },
+      "native_mean_dice": 0.8131104316855436,
+      "native_per_image_dice": {
+        "8": 0.7969090323684219,
+        "10": 0.8168792316173885,
+        "15": 0.8224209623130116,
+        "16": 0.8162325004433524
+      },
+      "evaluation_mask_conversion": "native binary -> PIL bilinear 512x512 -> nonzero, for prediction and reference",
+      "strategy": "baseline_flips"
+    },
+    {
+      "mean_dice": 0.8488678529595819,
+      "pooled_dice": 0.8492637358856203,
+      "threshold": 0.5249999999999999,
+      "per_image_dice": {
+        "8": 0.8360905176602738,
+        "10": 0.8555298160565553,
+        "15": 0.8641650652373764,
+        "16": 0.8396860128841221
+      },
+      "native_mean_dice": 0.8143592976365788,
+      "native_per_image_dice": {
+        "8": 0.7986984400424946,
+        "10": 0.8181994944588086,
+        "15": 0.8236040609140002,
+        "16": 0.8169351951310115
+      },
+      "evaluation_mask_conversion": "native binary -> PIL bilinear 512x512 -> nonzero, for prediction and reference",
+      "strategy": "baseline_d4"
+    },
+    {
+      "mean_dice": 0.851208947679073,
+      "pooled_dice": 0.8517012885163113,
+      "threshold": 0.39999999999999997,
+      "per_image_dice": {
+        "8": 0.8352112449025014,
+        "10": 0.8571862286722673,
+        "15": 0.8688149271672885,
+        "16": 0.8436233899742341
+      },
+      "native_mean_dice": 0.8159582144518502,
+      "native_per_image_dice": {
+        "8": 0.7980793048916788,
+        "10": 0.8183999019422186,
+        "15": 0.8292473827387202,
+        "16": 0.8181062682347836
+      },
+      "evaluation_mask_conversion": "native binary -> PIL bilinear 512x512 -> nonzero, for prediction and reference",
+      "strategy": "context_d4"
+    },
+    {
+      "mean_dice": 0.850760030522149,
+      "pooled_dice": 0.8512157292094904,
+      "threshold": 0.44999999999999996,
+      "per_image_dice": {
+        "8": 0.8364657105524764,
+        "10": 0.856454661869845,
+        "15": 0.8680496733904701,
+        "16": 0.8420700762758044
+      },
+      "native_mean_dice": 0.816137697700474,
+      "native_per_image_dice": {
+        "8": 0.8000914564442495,
+        "10": 0.8190135033102969,
+        "15": 0.8273737557763008,
+        "16": 0.8180720752710491
+      },
+      "evaluation_mask_conversion": "native binary -> PIL bilinear 512x512 -> nonzero, for prediction and reference",
+      "strategy": "mean_baseline_context_d4"
+    }
+  ],
+  "note": "Same four validation images select checkpoint, threshold and strategy; not a blind test score."
+}

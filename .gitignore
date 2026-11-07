@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.env
+task4/outputs/reproduced/
+task4/outputs/recheck_selection/
+task4/outputs/retrain*/
+task4/outputs/report_analysis.json

@@ -1,0 +1,65 @@
+{
+  "mean_dice": 0.8488678529595819,
+  "pooled_dice": 0.8492637358856203,
+  "threshold": 0.5249999999999999,
+  "per_image_dice": {
+    "8": 0.8360905176602738,
+    "10": 0.8555298160565553,
+    "15": 0.8641650652373764,
+    "16": 0.8396860128841221
+  },
+  "native_mean_dice": 0.8143592976365788,
+  "native_per_image_dice": {
+    "8": 0.7986984400424946,
+    "10": 0.8181994944588086,
+    "15": 0.8236040609140002,
+    "16": 0.8169351951310115
+  },
+  "evaluation_mask_conversion": "native binary -> PIL bilinear 512x512 -> nonzero, for prediction and reference",
+  "best_epoch": 45,
+  "config": {
+    "data": "segmentation",
+    "output": "outputs\\validation",
+    "epochs": 80,
+    "steps_per_epoch": 50,
+    "batch_size": 16,
+    "patch_size": 128,
+    "width": 16,
+    "lr": 0.001,
+    "seed": 42,
+    "eval_every": 5,
+    "all_data": false,
+    "selection": "outputs\\validation\\summary.json",
+    "device": "cuda",
+    "torch_version": "2.7.0+cu126",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "parameters": 488145,
+    "train_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "9",
+      "11",
+      "12",
+      "13",
+      "14",
+      "17",
+      "18",
+      "19",
+      "20"
+    ],
+    "validation_ids": [
+      "8",
+      "10",
+      "15",
+      "16"
+    ],
+    "training_epochs": 80,
+    "tta": "d4"
+  },
+  "checkpoint": "outputs\\validation\\best.pt"
+}
